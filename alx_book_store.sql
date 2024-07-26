@@ -16,8 +16,9 @@ CREATE TABLE Authors (
 );
 
 CREATE TABLE Customers (
-    customer_id PRIMARY KEY,
+    customer_id INT PRIMARY KEY,
     customer_name VARCHAR(215),
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
     email VARCHAR(215),
     address TEXT
 );
