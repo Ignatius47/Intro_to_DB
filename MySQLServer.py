@@ -116,8 +116,3 @@ def Order_details(order_detail_id, order_id, book_id, quantity):
             print(f"Error: {e}")
         finally:
             cursor.close()
-<<<<<<< HEAD
-            connection.close()
-=======
-            connection.close()
->>>>>>> origin/main
