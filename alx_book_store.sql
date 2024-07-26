@@ -3,9 +3,11 @@ CREATE DATABASE IF NOT EXISTS alx_book_store;
 USE alx_book_store;
 
 CREATE TABLE Books (
-    book_id PRIMARY KEY,
+    book_id INT PRIMARY KEY,
     title VARCHAR(130),
     author_id FOREIGN KEY REFERENCING Authors TABLE,
+    FOREIGN KEY (order_id) REFERENCES Orders(order_id), 
+    FOREIGN KEY (book_id) REFERENCES Books(book_id),
     price DOUBLE,
     publication_date DATE
 );
