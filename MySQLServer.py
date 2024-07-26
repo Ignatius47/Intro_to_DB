@@ -4,6 +4,7 @@ USE alx_book_store;
 
 import mysql.connector
 from mysql.connector import Error
+except mysql.connector.Error
 
 def create_database():
     try:
