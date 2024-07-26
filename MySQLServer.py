@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS alx_book_store;
+
 import mysql.connector
 
 def create_connection():
