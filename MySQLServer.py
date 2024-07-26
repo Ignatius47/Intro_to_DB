@@ -116,5 +116,3 @@ def Order_details(order_detail_id, order_id, book_id, quantity):
         finally:
             cursor.close()
             connection.close()
-
-create_database()
